@@ -33,7 +33,7 @@ public class Quadrilatere {
             return longueur * largeur;
         }
 
-        // Méthode pour afficher les infos
+        // Méthode pour afficher
         public void afficher() {
             System.out.println("Quadrilatère [longueur = " + longueur + ", largeur = " + largeur + "]");
         }
