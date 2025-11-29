@@ -1,15 +1,20 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        // Instance avec constructeur par défaut
+        Quadrilatere q1 = new Quadrilatere();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        // Instance avec constructeur paramétré
+        Quadrilatere q2 = new Quadrilatere(5, 3);
+
+        // Affichage des infos et calculs
+        q1.afficher();
+        System.out.println("Surface = " + q1.surface());
+        System.out.println("Périmètre = " + q1.perimetre());
+
+        System.out.println("----------------------");
+
+        q2.afficher();
+        System.out.println("Surface = " + q2.surface());
+        System.out.println("Périmètre = " + q2.perimetre());
     }
 }
